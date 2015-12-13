@@ -1,7 +1,7 @@
-<div id="sidebar-wp">
-    <?php if ( is_active_sidebar( 'primary' ) ) : ?>  
+<div id="sidebar-wp-mob">
+    <?php if ( is_active_sidebar( 'mob' ) ) : ?>  
 
-    <?php dynamic_sidebar( 'primary' ); ?>
+    <?php dynamic_sidebar( 'mob' ); ?>
 
     <?php else : ?>
 

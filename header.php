@@ -69,6 +69,7 @@
                             'container' => 'ul',
                         )); 
                     ?>
+                    <?php get_sidebar('mob'); ?>
                 </div>
             </div>
                 <?php get_sidebar('primary'); ?>

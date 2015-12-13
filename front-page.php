@@ -3,8 +3,15 @@
     <div id="content">
         <div class="banner">
             <img class="img-banner" src="<?php echo get_bloginfo('template_directory');?>/images/banner-2.png" alt="Unique and Functional UX by tracey.pw">
-            <div class="holder"><img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-1.png" alt="Groupo Floresta - Building a Better Community"></div>
-            <div class="holder"><img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-2.png" alt="Ivory - Mens Designer Clothing Consignment">
+            <div class="holder">
+                <a href="/portfolio/floresta">
+                    <img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-1.png" alt="Groupo Floresta - Building a Better Community">
+                </a>
+            </div>
+            <div class="holder">
+                <a href="/portfolio/project-ivory">
+                    <img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-2.png" alt="Ivory - Mens Designer Clothing Consignment">
+                </a>
             </div>
         </div>
         
@@ -14,7 +21,11 @@
         
         <div class="banner">
             <img class="img-banner" src="<?php echo get_bloginfo('template_directory');?>/images/banner-1.png" alt="A branded design and focused strategy by tracey.pw">
-            <div class="holder"><img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-4.png" alt="Cooper Lanza Art - Bellingham, WA Oil Paint Artist Portfolio Page"></div>
+            <div class="holder">
+                <a href="/portfolio/project-cooper-lanza-art">
+                    <img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-4.png" alt="Cooper Lanza Art - Bellingham, WA Oil Paint Artist Portfolio Page">
+                </a>
+            </div>
             <div class="holder"><img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-3.png" alt="West Side Music Academy - Seattle Music School">
             </div>
         </div>

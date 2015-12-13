@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php get_sidebar('blog');?>
 <!-- START CONTENT -->
 <div id="container">
     <div id="content" class="index">

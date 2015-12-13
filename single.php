@@ -9,13 +9,13 @@
         <h2><?php the_title(); ?></h2>     
         <?php the_content('More &raquo;'); ?>
         <?php wp_link_pages(); ?>
+        <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
 
         <nav class="post-nav">            
-            <div class="alignleft"><?php previous_post_link('&laquo; %link', '%title', true) ?></div>
-            <div class="alignright"><?php next_post_link('%link &raquo;', '%title', true) ?></div>
+            <div class="alignleft"><?php previous_post_link('&larr; %link', '%title', true) ?></div>
+            <div class="alignright"><?php next_post_link('%link &rarr;', '%title', true) ?></div>
         </nav>
 
-        <?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?>
         <?php comments_template(); ?>
         <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>

@@ -30,9 +30,6 @@ Text Domain: traceypw
 .inline {
   display: inline; }
 
-@-ms-viewport {
-  width: device-width; }
-
 /* TYPE */
 /*font-family: 'Roboto Slab', serif;*/
 /* line 21, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
@@ -555,6 +552,16 @@ h2.headline {
     border-left:4px #fda281 solid;
     padding-left:10px;
 }
+
+h2.headline > a:hover {    
+    background: #fefefe;
+    transition: .3s ease;    
+}
+
+h2.headline > a:active {    
+    background: #fda281;
+    transition: .3s ease;    
+}
 /*
 @keyframes headline-ani {
     0%{background:#e8ebeb;width:20%; opacity:.3;}
@@ -565,6 +572,15 @@ h2.headline {
 section.headline {
     margin:0px;
 }
+
+section.project-header {
+    width:100%;
+    display:block;
+    margin:0 auto;
+    text-align: center;
+    padding:10px
+}
+
 /* line 362, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
 .tag {
   display: block;
@@ -913,7 +929,7 @@ input#submit:active {
     border:1px solid #313333;
     outline:0;
     padding:2px 4px;
-    font-family:'Roboto'
+    font-family:'Roboto';
     max-width:80%;
     display:block;
     margin:0 auto;
@@ -932,6 +948,8 @@ input#submit:active {
     color:#e8ebeb;
 }
 
+.wpcf7-form-control-wrap {display: inline-flex;}
+
 .about {
     width:70%;
     margin:0 auto;
@@ -941,6 +959,81 @@ input#submit:active {
     background:#fefefe;
     padding:20px;
 }
+
+.size-large {
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+.goals {
+    width:50%;
+    border-right: 4px #fda281 solid;
+    float:left;
+}
+
+.outcomes {
+    width:45%;
+    float:right;
+}
+
+div.project-box {
+    width:100%;
+}
+
+.project-screen {
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    display:block;
+}
+
+.post-nav {
+    font-family:'Roboto Mono';
+    font-size:.8em;
+    width:100%;
+    
+}
+
+#categories-3 {padding-top:10px; margin-bottom: 90px;}
+
+.widget_categories ul {
+    padding-bottom:50px;
+    display: block;
+}
+
+.cat-item {
+    display:block;
+    float:left;
+    clear:both;
+    width:95%;
+    padding:4px 4px 0 14px;
+    margin-bottom:5px;
+}
+
+.cat-item a {
+    background:#fefefe;
+    text-decoration: none;
+    padding:2px 4px;
+}
+
+.cat-item a:hover {
+    background:#fda281;
+    transition:.3s ease;
+}
+
+.social-widget {
+    padding-top:10px;
+}
+
+#sidebar-wp-mob {
+    display:none;
+}
+
+
+
+.post-nav > .alignleft {text-align: left; width:40%;float:left;}
+.post-nav > .alignright {text-align: right; width:40%; float:right;}
 
 @media screen and (max-width: 939px) {
     /* line 578, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
@@ -952,6 +1045,8 @@ input#submit:active {
     /* line 584, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
     .minilogo {
         display: block; } 
+    .mob-nav {
+  display: none; }
     #sidebar-wp {
         width: 150px;
         padding: 10px;
@@ -963,16 +1058,24 @@ input#submit:active {
         border-left: none;
         border-bottom: none; 
         padding:10px 0;
+        z-index: -1;
 }
 
-    #sidebar-wp ul {display:inline;padding:0px 0 0px 0; float:right;}
+    #sidebar-wp h3 {font-size:1em;padding-left:10px}
+    
+    #sidebar-wp ul {display:inline;padding:0px 0 0px 0;}
+    
+    #sidebar-wp ul.social-widget {
+        float:right;
+    }
 
-    #sidebar-wp ul li {
+    #sidebar-wp ul.social-widget li {
         list-style:circle;
         display:inline;
         float:none;
         margin-left:0px;
         margin-top:7px;
+        clear:both;
     }
 
     #sidebar-wp ul li a {
@@ -1024,7 +1127,8 @@ input#submit:active {
     width: 100%;
     display: block;
     max-width: 100%;
-    position: relative; }
+    position: relative;
+    }
     /* line 618, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
     #nav .toggle {
       top: 14px;
@@ -1048,7 +1152,14 @@ input#submit:active {
     /* line 641, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
     #nav .minilogo {
       display: none; }
-    #sidebar-wp {display:none;}
+    
+    #nav ul li {    
+        margin:0;
+
+    }
+    #sidebar-wp {
+        display:none;
+    }
   /* line 646, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
   .desk-nav {
     display: none; }
@@ -1065,9 +1176,33 @@ input#submit:active {
     }
     /* line 658, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
     .mob-nav ul li {
-      font-size: 130%; }
+      font-size: 130%; 
+        padding:0 10% 1% 0;
+    }
     
     .mob-nav .sub {font-size:80%;}
+    
+    #sidebar-wp-mob {
+        display:block;
+    }
+    
+    #sidebar-wp-mob h3 {display:none;}
+    
+    .social-widget {
+        display:block;
+        text-align: center;
+        padding-top:40px;
+        clear:both;
+        width:100%;
+        margin: 0 auto;
+    }
+    
+    .social-widget li {
+        clear:none;
+        float:left;
+        width:10%;
+    }
+    
     /* line 663, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
   #sidebar {
     display: none; }
@@ -1092,9 +1227,24 @@ input#submit:active {
       margin: 10px 0; }
   /* line 691, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
   .placeholder {
-    display: inline-block;
-    margin: 5px auto;
-    width: 45%; }
+        display: inline-block;
+        margin: 5px auto;
+        width: 45%; }
+    .goals {
+        width:100%;
+        border-right:none;
+        float:none;
+        border-bottom: 4px solid #fda281;
+        padding-bottom: 15px;
+    }
+
+    .outcomes {
+        width:100%;
+        border-right:none;
+        float:none;
+        padding-bottom: 10px;
+
+    }
   /* line 696, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
   #footer {
     display: none; } }
