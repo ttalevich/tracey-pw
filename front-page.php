@@ -6,11 +6,13 @@
             <div class="holder">
                 <a href="/portfolio/floresta">
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-1.png" alt="Groupo Floresta - Building a Better Community">
+                    <h3><span>Floresta</span></h3>
                 </a>
             </div>
             <div class="holder">
                 <a href="/portfolio/project-ivory">
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-2.png" alt="Ivory - Mens Designer Clothing Consignment">
+                    <h3><span>Ivory</span></h3>
                 </a>
             </div>
         </div>
@@ -24,18 +26,21 @@
             <div class="holder">
                 <a href="/portfolio/project-cooper-lanza-art">
                     <img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-4.png" alt="Cooper Lanza Art - Bellingham, WA Oil Paint Artist Portfolio Page">
+                    <h3><span>Cooper Lanza Art</span></h3>
                 </a>
             </div>
             <div class="holder"><img src="<?php echo get_bloginfo('template_directory');?>/images/thumb/banner-sub-v2-3.png" alt="West Side Music Academy - Seattle Music School">
+                <h3><span>West Side Music Academy</span></h3>
             </div>
         </div>
         <div class="home-contact">
-            <span><h2>Let us get in touch</h2></span>
-            <span><h2>&darr;</h2></span>
+            <div><h2>Let us get in touch</h2></div>
+            <div><h2>&darr;</h2></div>
             <?php echo do_shortcode('[contact-form-7 id="58" title="home page contact"]'); ?>
         </div>
     </div>
 </div>
+</div> <!--Close wrapper -->
 <?php wp_footer(); ?> 
 </body>
 </html>

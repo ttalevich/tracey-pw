@@ -12,19 +12,21 @@
 </script>
 <![endif -->    
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/favicon-16x16.png" sizes="16x16" />
-<meta name="application-name" content="tracey.pw"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/mstile-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="tracey.pw"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon/mstile-144x144.png" />
+    <meta name="theme-color" content="#959b9b">
     <!-- call jquery for the toggle nav and image rollovers -->
     <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.3/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400|Roboto+Mono:400,500italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,500italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>		        
     <script src="<?php bloginfo('template_url');?>/script.js" type="text/javascript"></script>
     <?php /*?> Always have wp_head() inside the </head> tag 

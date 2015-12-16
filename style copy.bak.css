@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
   text-align: right;
   font-size: 2.65em;
-  margin-right: 20px;
+  margin-right: 40px;
   color: #828585;
   text-shadow: 0px -3px #666B6B;
   text-decoration: none;
@@ -218,11 +218,12 @@ body {
 /* line 206, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
 #nav {
   width: 20%;
-  max-width: 180px;
+  max-width: 200px;
   height: 300px;
   padding: 10px;
   float: left;
-  }
+  position: fixed;
+  top: 0; }
 
 /* line 216, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
 #nav ul li {
@@ -377,11 +378,11 @@ body {
 
 /* line 298, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
 #sidebar-wp {
-  width: 199px;
+  width: 200px;
   padding: 10px;
   float: left;
-    clear:left;
-    margin-top:60px;
+  position: fixed;
+  top: 360px;
   background: #e8ebeb;
   border-top: 1px #313333 solid;
   border-left: 1px #313333 solid;
@@ -433,11 +434,11 @@ body {
   width: 80%;
   max-width: 698px;
   background: #e8ebeb;
+  float: right;
   padding: 10px 10px 60px 10px;
   border: 1px #313333 solid;
   overflow: hidden;
-  clear: none; 
-}
+  clear: both; }
 
 /* line 342, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
 #content {
@@ -1138,7 +1139,6 @@ ol.commentlist li {
     padding:3px 2px;
     border-radius:0px;
     background:#D1D8D8;
-    color:#313333;
 }
 
 div.reply a {
@@ -1167,20 +1167,18 @@ div.reply a {
         display: block; } 
     .mob-nav {
   display: none; }
-    #container {
-          width: 73%;
-        }
     #sidebar-wp {
         width: 150px;
         padding: 10px;
         float: left;
+        position: fixed;
+        top: 360px;
         background: transparent;
         border-top: none;
         border-left: none;
         border-bottom: none; 
         padding:10px 0;
         z-index: 1;
-        margin-left:10px;
 }
 
     #sidebar-wp h3 {font-size:1em;padding-left:10px}
@@ -1224,7 +1222,7 @@ div.reply a {
   /* line 591, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
   #nav ul {
     margin-left: 0;
-    margin-right: 0px; }
+    margin-right: 20px; }
   /* line 596, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
   #nav ul li a {
     font-size: 90%; }
@@ -1311,12 +1309,9 @@ div.reply a {
     
     #sidebar-wp-mob {
         display:block;
-        padding-top:20px;
     }
     
     #sidebar-wp-mob h3 {display:none;}
-    
-    #categories-4 {padding-right:40px;}
     
     .social-widget {
         display:block;
