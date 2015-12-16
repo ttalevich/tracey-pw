@@ -1343,7 +1343,8 @@ div.reply a {
     width: 100%; }
   /* line 673, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
   #content {
-    margin: 2%;
+    margin: 0;
+      padding:0;
     width: 96%; }
     /* line 676, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
     #content p, #content h1, #content h2, #content h3, #content h4 {
