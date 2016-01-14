@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | Web Design &amp; Development, UI/UX Design | Tracey Talevich | Seattle, WA
+</title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,6 +30,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,500italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>		        
     <script src="<?php bloginfo('template_url');?>/script.js" type="text/javascript"></script>
+    <noscript>For optimal viewing of tracey.pw, please use a browser which supports Javascript, any new browser should do. I recommend Google Chrome or Firefox. If you're one of those types who purposefully disabled it, c'mon.</noscript>
     <?php /*?> Always have wp_head() inside the </head> tag 
        of your theme. Many plugins use this hook to add elements 
         to <head> such as styles, scripts, and meta tags.

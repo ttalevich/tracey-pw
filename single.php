@@ -16,7 +16,6 @@
             <div class="alignright"><?php next_post_link('%link &rarr;', '%title', true) ?></div>
         </nav>
 
-        <?php comments_template(); ?>
         <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>

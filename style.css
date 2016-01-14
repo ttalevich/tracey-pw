@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
   text-align: right;
   font-size: 2.65em;
-  margin-right: 20px;
+  margin-right: 0px;
   color: #828585;
   text-shadow: 0px -3px #666B6B;
   text-decoration: none;
@@ -227,7 +227,7 @@ body {
 /* line 216, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
 #nav ul li {
   list-style: none;
-  margin: 10px 15% 0 0;
+  margin: 10px 0;
   font-family: 'Roboto Mono';
   text-align: right; 
   color: #313333;
@@ -620,7 +620,6 @@ section.project-header {
     display:block;
     margin:0 auto;
     text-align: center;
-    padding:10px
 }
 
 /* line 362, /Users/TT/Google Drive/tracey.pw/concrete/style.scss */
@@ -1022,6 +1021,7 @@ input#submit:active {
     padding:20px;
     text-align: left;
     opacity:0;
+    box-sizing: border-box;
 }
 
 
@@ -1106,6 +1106,9 @@ div.project-box {
 
 .social-widget {
     padding-top:10px;
+}
+.social-widget li a:hover {
+    background:none;
 }
 
 #sidebar-wp-mob {
